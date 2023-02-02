@@ -1,1 +1,0 @@
-#testing connection to git via terminal and vscode
