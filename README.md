@@ -10,7 +10,7 @@
 
 [1]
 
-* A collection of Weekly Tasks set in the PANDS Module *
+A collection of Weekly Tasks set in the PANDS Module
 
 ## List of Contents
 
@@ -21,8 +21,16 @@
 `# is this thing on?`
 
 Prints the text *hellowworld* when called in terminal via - `python helloworld.py`  
+2. **Accounts**
+Program that reads in 10 digits and outputs same digits with only last 4 showing and first 6 replaced with X's
 
-2.
+Takes in the users account number
+`account_raw = input("Please enter your 10 digit account number: ")`
+
+Confirms last 4 digits of account while hiding the first 6 digits via index and prints the result
+`account_secure = (f"Account number: XXXXXX{account_raw[-4:]}")`
+`print(account_secure)`
+
 3.
 4.
 5.
