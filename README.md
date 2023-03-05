@@ -8,7 +8,7 @@
 }
 ```
 
-[1]
+[^1]
 
 A collection of Weekly Tasks set in the PANDS Module
 
@@ -43,16 +43,16 @@ A collection of Weekly Tasks set in the PANDS Module
 
 `bankIn = int(input("Lodgement Amount 1: "))
 bankIn2= int(input("Lodgement Amount 2: "))`
->Input 1 and 2 take in a number and change it to a int to then be added [2]
+>Input 1 and 2 take in a number and change it to a int to then be added [^2]
 
 `totalLodgement = (bankIn + bankIn2)`
 >add both int numbers
 
 `euroCents = (totalLodgement/100)`
->converts input to euro and cents with the decimal point [3]
+>converts input to euro and cents with the decimal point [^3]
 
 `print(f"You have lodged €{('%.2f' % euroCents)}\nThank You!")`
->Euro and cent amount output to user with trailing zero kept so cent amounts with '0' in them stay visible [4]
+>Euro and cent amount output to user with trailing zero kept so cent amounts with '0' in them stay visible [^4]
 ---
 
 4.
@@ -69,10 +69,10 @@ bankIn2= int(input("Lodgement Amount 2: "))`
 
 ### References
 
-[1]: https://www.markdownguide.org/basic-syntax/ "Markdown Cheat Sheet"
+[^1]: https://www.markdownguide.org/basic-syntax/ "Markdown Cheat Sheet"
 
-[2]: https://vlegalwaymayo.atu.ie/pluginfile.php/857748/mod_label/intro/lab%202.2%20First%20Programs.pdf?time=1675120017388 "First Programs"
+[^2]: https://vlegalwaymayo.atu.ie/pluginfile.php/857748/mod_label/intro/lab%202.2%20First%20Programs.pdf?time=1675120017388 "First Programs"
 
-[3]: https://stackoverflow.com/questions/46189874/python-find-the-dollar-and-cent "How to get Dollar Cent - User: YOHAN DE ROSE"
+[^3]: https://stackoverflow.com/questions/46189874/python-find-the-dollar-and-cent "How to get Dollar Cent - User: YOHAN DE ROSE"
 
-[4]: https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python "How to keep trailing Zeros - User: eyquem"
+[^4]: https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python "How to keep trailing Zeros - User: eyquem"
