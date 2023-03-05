@@ -1,5 +1,6 @@
 # pands-problem-sheet
 
+| Info | Details |
 | -------- | -------- |
 | Course: | KDATG_L08_Y1 |
 | Author: | Rebecca Hannah Quinn |
