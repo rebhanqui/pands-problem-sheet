@@ -28,8 +28,14 @@ A collection of Weekly Tasks set in the PANDS Module
 `account_raw = input("Please enter your 10 digit account number: ")`
 >Takes in the users account number
 
-`account_secure = (f"Account number: XXXXXX{account_raw[-4:]}")`
-`print(account_secure)`
+```python
+
+{
+    account_secure = (f"Account number: XXXXXX{account_raw[-4:]}")
+    print(account_secure)
+}
+
+```
 >Confirms last 4 digits of account while hiding the first 6 digits via index and prints the result
 ---
 
