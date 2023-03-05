@@ -1,10 +1,8 @@
 # pands-problem-sheet
 
-Course: KDATG_L08_Y1
-Author: Rebecca Hannah Quinn
-Student Number: G00425671
-
-[^1]
+| Course: | KDATG_L08_Y1 |
+| Author: | Rebecca Hannah Quinn |
+| Student Number: | G00425671 |[^1]
 
 A collection of Weekly Tasks set in the PANDS Module
 
