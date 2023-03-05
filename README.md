@@ -1,5 +1,5 @@
 # pands-problem-sheet
-
+[^1]
 ```text
 {
     "Course": "KDATG_L08_Y1",
@@ -12,9 +12,11 @@
 
 1. **Hello World**
 
->`print("helloworld"`
->`# is this thing on?`
->`#prints the text hellowworld when called in terminal via - python helloworld.py`
+>`print("helloworld")`  
+
+>`# is this thing on?` 
+
+>`#prints the text hellowworld when called in terminal via - python helloworld.py`  
 
 2.
 3.
