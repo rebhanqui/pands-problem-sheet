@@ -30,8 +30,8 @@ A collection of Weekly Tasks set in the PANDS Module
 
 ```python
 
-    account_secure = (f"Account number: XXXXXX{account_raw[-4:]}")
-    print(account_secure)
+account_secure = (f"Account number: XXXXXX{account_raw[-4:]}")
+print(account_secure)
 
 ```
 >Confirms last 4 digits of account while hiding the first 6 digits via index and prints the result
