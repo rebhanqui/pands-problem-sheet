@@ -59,23 +59,23 @@ bankIn2= int(input("Lodgement Amount 2: "))`
 
 
 `def collatz(number):`
->Creates function to run following collatz sequence [^5]
+>Creates function to run following collatz sequence [^5] 
 
 `if (number % 2 == 0):`
     `return number // 2`
->Takes positive int and divides by two until odd number
+>Takes positive int and divides by two until odd number 
 
 `elif (number % 2 == 1):`
     `return number * 3 + 1`
 `else :`
     `print("ERROR")`
-    `return None`
->When encountering an odd number then program multiplies by 3 and adds 1
+    `return None` 
+>When encountering an odd number then program multiplies by 3 and adds 1 
 
 `print("Enter a number. ")`
 `number = int(input())`
 `print(number)`
->User input of int
+>User input of int 
 
 `while (number != 1):`
    `number = collatz(number)`
