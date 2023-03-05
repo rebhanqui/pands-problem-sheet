@@ -1,4 +1,4 @@
-# pands-problem-sheet
+# Pands Problem Sheet - HDIP in Data Analytics 2023
 
 | Info | Details |
 | -------- | -------- |
