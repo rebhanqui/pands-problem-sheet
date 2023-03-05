@@ -1,6 +1,4 @@
-# pands-problem-sheet 
-
-
+# pands-problem-sheet
 
 ```text
 {
@@ -32,4 +30,4 @@ Prints the text *hellowworld* when called in terminal via - `python helloworld.p
 
 ### References
 
-[1]: https://www.markdownguide.org/basic-syntax/
+[Mark Down Cheat Sheet][1]: <https://www.markdownguide.org/basic-syntax/>
