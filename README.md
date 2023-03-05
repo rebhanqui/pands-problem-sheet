@@ -46,16 +46,38 @@ bankIn2= int(input("Lodgement Amount 2: "))`
 >Input 1 and 2 take in a number and change it to a int to then be added [^2]
 
 `totalLodgement = (bankIn + bankIn2)`
->add both int numbers
+>Add both int numbers
 
 `euroCents = (totalLodgement/100)`
->converts input to euro and cents with the decimal point [^3]
+>Converts input to euro and cents with the decimal point [^3]
 
 `print(f"You have lodged €{('%.2f' % euroCents)}\nThank You!")`
 >Euro and cent amount output to user with trailing zero kept so cent amounts with '0' in them stay visible [^4]
 ---
 
-4.
+4. Collatz
+
+>Creates function to run collatz sequence [^5]
+`def collatz(number):`
+>takes positive int and divides by two until odd number
+`if (number % 2 == 0):`
+    `return number // 2`
+>if odd number then multiple by 3 and add 1
+`elif (number % 2 == 1):`
+    `return number * 3 + 1`
+`else :`
+    `print("ERROR")`
+    `return None`
+>User input of positive int
+`print("Enter a number. ")`
+`number = int(input())`
+`print(number)`
+>end when result gets to 1
+
+`while (number != 1):`
+   `number = collatz(number)`
+   `print(number)`
+`print(number)`
 
 ---
 
@@ -76,3 +98,5 @@ bankIn2= int(input("Lodgement Amount 2: "))`
 [^3]: https://stackoverflow.com/questions/46189874/python-find-the-dollar-and-cent "How to get Dollar Cent - User: YOHAN DE ROSE"
 
 [^4]: https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python "How to keep trailing Zeros - User: eyquem"
+
+[^5]: https://youtu.be/lAp_5qTdOhM "Collatz Sequence Algorithm in Python @ 1:30"
