@@ -1,12 +1,8 @@
 # pands-problem-sheet
 
-```text
-{
-    "Course": "KDATG_L08_Y1",
-    "Author": "Rebecca Hannah Quinn",
-    "Student Number": G00425671
-}
-```
+Course: KDATG_L08_Y1
+Author: Rebecca Hannah Quinn
+Student Number: G00425671
 
 [^1]
 
