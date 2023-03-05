@@ -30,10 +30,8 @@ A collection of Weekly Tasks set in the PANDS Module
 
 ```python
 
-{
     account_secure = (f"Account number: XXXXXX{account_raw[-4:]}")
     print(account_secure)
-}
 
 ```
 >Confirms last 4 digits of account while hiding the first 6 digits via index and prints the result
@@ -43,8 +41,13 @@ A collection of Weekly Tasks set in the PANDS Module
 
 >This program prompts user to input 2 amounts, adds both and prints output to user
 
-`bankIn = int(input("Lodgement Amount 1: "))
-bankIn2= int(input("Lodgement Amount 2: "))`
+```python
+
+bankIn = int(input("Lodgement Amount 1: "))
+bankIn2= int(input("Lodgement Amount 2: "))
+
+```
+
 >Input 1 and 2 take in a number and change it to a int to then be added [^2]
 
 `totalLodgement = (bankIn + bankIn2)`
@@ -67,22 +70,38 @@ bankIn2= int(input("Lodgement Amount 2: "))`
     `return number // 2`
 >Takes positive int and divides by two until odd number 
 
-`elif (number % 2 == 1):`
-    `return number * 3 + 1`
-`else :`
-    `print("ERROR")`
-    `return None` 
+
+```python
+
+elif (number % 2 == 1):
+    return number * 3 + 1
+else :
+    print("ERROR")
+    return None
+
+```
+
 >When encountering an odd number then program multiplies by 3 and adds 1 
 
-`print("Enter a number. ")`
-`number = int(input())`
-`print(number)`
+```python
+
+print("Enter a number. ")
+number = int(input())
+print(number)
+
+```
+
 >User input of int 
 
-`while (number != 1):`
-   `number = collatz(number)`
-   `print(number)`
-`print(number)`
+```python
+
+while (number != 1):
+   number = collatz(number)
+   print(number)
+print(number)
+
+```
+
 >Ends when result gets to 1
 
 ---
