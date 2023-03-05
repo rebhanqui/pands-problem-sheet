@@ -1,5 +1,7 @@
 # pands-problem-sheet
+
 [^1]
+
 ```text
 {
     "Course": "KDATG_L08_Y1",
@@ -10,13 +12,15 @@
 
 * A collection of Weekly Tasks set in the PANDS Module *
 
+## List of Contents
+
 1. **Hello World**
 
->`print("helloworld")`  
+`print("helloworld")`
 
->`# is this thing on?` 
+`# is this thing on?`
 
->`#prints the text hellowworld when called in terminal via - python helloworld.py`  
+prints the text hellowworld when called in terminal via - `python helloworld.py`  
 
 2.
 3.
@@ -25,4 +29,5 @@
 6.
 
 ### References
+
 [^1] [MD040 - Fenced code blocks should have a language specified] (https://github.com/DavidAnson/markdownlint/blob/v0.27.0/doc/md040.md)
