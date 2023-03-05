@@ -22,6 +22,8 @@ A collection of Weekly Tasks set in the PANDS Module
 
 >Prints the text *hellowworld* when called in terminal via - `python helloworld.py`
 
+---
+
 2. **Accounts**
 
 >Program that reads in 10 digits and outputs same digits with only last 4 showing and first 6 replaced with X's
