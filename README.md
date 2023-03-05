@@ -30,5 +30,5 @@ Prints the text *hellowworld* when called in terminal via - `python helloworld.p
 
 ### References
 
-[1]: Mark Down Cheat Sheet <https://www.markdownguide.org/basic-syntax/>
+[1]: [Mark Down Cheat Sheet] <https://www.markdownguide.org/basic-syntax/>
 
