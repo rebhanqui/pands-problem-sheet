@@ -45,12 +45,11 @@ A collection of Weekly Tasks set in the PANDS Module
 bankIn2= int(input("Lodgement Amount 2: "))`
 >Input 1 and 2 take in a number and change it to a int to then be added [2]
 
-#add both int numbers
-totalLodgement = (bankIn + bankIn2)
+`totalLodgement = (bankIn + bankIn2)`
+>add both int numbers
 
-# converts input to euro and cents with the decimal point
-# ref: https://stackoverflow.com/questions/46189874/python-find-the-dollar-and-cent USR: YOHAN DE ROSE
-euroCents = (totalLodgement/100)
+`euroCents = (totalLodgement/100)`
+>converts input to euro and cents with the decimal point [3]
 
 #euro and cent amount output to user with trailing zero kept so cent amounts with '0' in them stay visible
 # '%.2f' ref5: https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python USR: eyquem
@@ -74,3 +73,5 @@ print(f"You have lodged €{('%.2f' % euroCents)}\nThank You!")
 [1]: https://www.markdownguide.org/basic-syntax/ "Markdown Cheat Sheet"
 
 [2]: https://vlegalwaymayo.atu.ie/pluginfile.php/857748/mod_label/intro/lab%202.2%20First%20Programs.pdf?time=1675120017388 "First Programs"
+
+[3]: https://stackoverflow.com/questions/46189874/python-find-the-dollar-and-cent "How to get Dollar Cent - User: YOHAN DE ROSE"
