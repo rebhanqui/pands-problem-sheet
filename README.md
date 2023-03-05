@@ -1,6 +1,6 @@
 # pands-problem-sheet
 
-[^1]
+[Markdown-Cheat-Sheet][1]
 
 ```text
 {
@@ -20,7 +20,7 @@
 
 `# is this thing on?`
 
-prints the text hellowworld when called in terminal via - `python helloworld.py`  
+Prints the text *hellowworld* when called in terminal via - `python helloworld.py`  
 
 2.
 3.
@@ -30,4 +30,4 @@ prints the text hellowworld when called in terminal via - `python helloworld.py`
 
 ### References
 
-[^1] [MD040 - Fenced code blocks should have a language specified] (https://github.com/DavidAnson/markdownlint/blob/v0.27.0/doc/md040.md)
+[1]: https://www.markdownguide.org/basic-syntax/
