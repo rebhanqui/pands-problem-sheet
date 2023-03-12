@@ -1,3 +1,6 @@
+#author: rebecca quinn
+#program that tells if weekday or weekend
+
 import datetime
 #allows you to use current date/day/time in following code
 
