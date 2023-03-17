@@ -9,4 +9,5 @@ while datetime == range(0, 5):
     print("Yes, unfortunately today is a weekday")
 print("It is the weekend, yay!")
 
+
 #test on weekday to see if works
