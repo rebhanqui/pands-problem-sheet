@@ -1,5 +1,7 @@
 #REF 1: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
 #defining number variable as whatever is input by user
+#Author Rebecca Quinn
+
 numbers = int(input("Please pick a number: "))
 
 #function to apply the newton method of getting the square root

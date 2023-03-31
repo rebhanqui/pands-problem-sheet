@@ -1,6 +1,6 @@
 # bank.py 
 #prompts user to input 2 amounts, adds both and prints output to user
-# Author: Rebecca Hannah Quinn
+# Author: Rebecca Quinn
 
 #input 1 and 2 take in a number and change it to a int to then be added on line 11
 # ref6: https://vlegalwaymayo.atu.ie/pluginfile.php/857748/mod_label/intro/lab%202.2%20First%20Programs.pdf?time=1675120017388
