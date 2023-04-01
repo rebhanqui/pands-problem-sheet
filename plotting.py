@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 meanvalue = 5
 standard = 2
 distrib = 1000
-x = np.random.normal(loc = meanvalue , scale = standard, size = distrib)
+x = np.random.normal(meanvalue, standard, distrib)
 plt.hist(x)
 
 
