@@ -17,14 +17,14 @@ ypoints = pow(xpoints, 3,)
 
 #CUSTOMISING PLOT CODE BELOW]
 #REF https://medium.com/@arseniytyurin/how-to-make-your-histogram-shine-69e432be39ca
+
 plt.figure(figsize=(14,7)) # size of fig 14x7
 plt.style.use('seaborn-whitegrid') #grid style
 plt.title("Plotting Plot")
-plt.xlabel("X Data")
-plt.ylabel("Y Data")
-plt.hist(x, facecolor="cyan", edgecolor="white") # draw solid white grid lines
-plt.plot(xpoints, ypoints, linewidth=5.0, color="pink") #https://www.statology.org/matplotlib-line-thickness/
 
+plt.hist(x, facecolor="cyan", edgecolor="white", label="X Data") # draw solid white grid lines
+plt.plot(xpoints, ypoints, linewidth=5.0, color="pink", label="Y Data") #https://www.statology.org/matplotlib-line-thickness/
+plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=2.)
 #REF: https://jakevdp.github.io/PythonDataScienceHandbook/04.11-settings-and-stylesheets.html
 
 
@@ -32,6 +32,8 @@ plt.plot(xpoints, ypoints, linewidth=5.0, color="pink") #https://www.statology.o
 # saves the plot into an image file as seen in plotted.png 
 #plt.savefig("plotted.png")
 # REF https://towardsdatascience.com/save-plots-matplotlib-1a16b3432d8a
+
+#shows plot
 plt.show()
 
 
