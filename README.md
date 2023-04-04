@@ -108,11 +108,29 @@ print(number)
 
 ---
 
-5.
+5. Weekday
+
+>Prints one of two results depend if it is a weekday or not.
+>By using import date the code can tell what the current day is without import.
+>By giving the function perameters, if its not monday Friday (0-5) then it is the weekend
 
 ---
 
-6.
+6. Squareroot
+
+
+
+---
+
+7. Read E's
+
+
+
+---
+
+8. Plottask
+
+
 
 ---
 

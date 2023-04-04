@@ -30,7 +30,7 @@ plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=2.)
 
 #shows the plots
 # saves the plot into an image file as seen in plotted.png 
-#plt.savefig("plotted.png")
+#plt.savefig("plottask.png")
 # REF https://towardsdatascience.com/save-plots-matplotlib-1a16b3432d8a
 
 #shows plot
