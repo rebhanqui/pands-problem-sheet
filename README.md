@@ -111,14 +111,59 @@ print(number)
 5. Weekday
 
 >Prints one of two results depend if it is a weekday or not.
->By using import date the code can tell what the current day is without import.
+
+```python
+
+print("Yes, unfortunately today is a weekday")
+print("It is the weekend, yay!")
+
+```
+
+>By using import date the code can tell what the current day is without import. [^6]
+
+```python
+
+import datetime
+
+```
+
 >By giving the function perameters, if its not monday Friday (0-5) then it is the weekend
+
+```python
+
+while datetime == range(0, 5):
+
+```
 
 ---
 
 6. Squareroot
 
+```python
 
+numbers = int(input("Please pick a number: "))
+
+```
+
+>A function to find the square root of any number input by user
+>The function below applies the newton method of getting the square root
+
+```python
+
+def newtonSqrt(numbers): 
+    approx = 0.5 * numbers
+    better = 0.5 * (approx + numbers/approx)
+    
+    while better != approx:
+        approx = better
+    better = 0.5 * (approx + numbers/approx)
+
+    return approx
+
+```
+
+>The numbers variable is the parameter to facilitate the square root calculation
+While function allows the input eventually be multiplied by .5 to be further calculated to get the square root
 
 ---
 
@@ -145,3 +190,5 @@ print(number)
 [^4]: https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python "How to keep trailing Zeros - User: eyquem"
 
 [^5]: https://youtu.be/lAp_5qTdOhM "Collatz Sequence Algorithm in Python @ 1:30"
+
+[^6]: https://www.w3schools.com/python/python_datetime.asp "Date Time Import"
