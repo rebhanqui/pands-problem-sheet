@@ -146,27 +146,31 @@ else:
 
 6. Squareroot [^8] [^9]
 
-```python
-numbers = int(input("Please pick a number: "))
+Program to define the root of user given number
+
+>User input defineing var n
+
+```py
+n = int(input("Please pick a number: "))
 ```
 
-A function to find the square root of any number input by user
->The function below applies the newton method of getting the square root
+>Function to apply the newton method in order to return the square root
 
 ```python
-def newtonSqrt(numbers): 
-    approx = 0.5 * numbers
-    better = 0.5 * (approx + numbers/approx)
-    
-    while better != approx:
-        approx = better
-    better = 0.5 * (approx + numbers/approx)
-
+def newtonsqrt(n):
+    approx=0.5*n
+    better=0.5*(approx+n/approx)
+    while better!=approx:
+        approx=better
+        better=0.5*(approx+n/approx)
     return approx
 ```
 
->The numbers variable is the parameter to facilitate the square root calculation
-While function allows the input eventually be multiplied by .5 to be further calculated to get the square root
+>Prints the user input number and the result of the function concantenated
+
+```python
+print(f"The Square Root of {n} is approx. {newtonsqrt(n)}")
+```
 
 ---
 
@@ -280,7 +284,7 @@ plt.show()
 
 [^7]: https://www.niskayuna.org/sites/g/files/vyhlif4781/f/uploads/computercorner_do_you_know_what_time_it_is_and_does_your_pc_know_too.pdf
 
-[^8]: https://www.geeksforgeeks.org/python-pow-function/
+[^8]: https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
 
 [^9]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
 
