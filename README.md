@@ -45,8 +45,8 @@ Prompts user to input 2 amounts in cents, adds both and prints output to user in
 >Input 1 and 2 take in a number and change it to a int to then be added and assigned to the totalLodgement var
 
 ```python
-bankIn = int(input("Lodgement Amount 1: "))
-bankIn2= int(input("Lodgement Amount 2: "))
+bankIn = int(input("Lodgement Amount 1 (in cents): "))
+bankIn2= int(input("Lodgement Amount 2 (in cents): "))
 
 totalLodgement = (bankIn + bankIn2)
 ```
