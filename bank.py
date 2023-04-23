@@ -15,6 +15,6 @@ totalLodgement = (bankIn + bankIn2)
 euroCents = (totalLodgement/100)
 
 #euro and cent amount output to user with trailing zero kept so cent amounts with '0' in them stay visible
-# '%.2f'
+# '%.2f' 
 print(f"You have lodged €{('%.2f' % euroCents)}\nThank You!")
 
