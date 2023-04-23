@@ -144,7 +144,7 @@ else:
 
 ---
 
-6. Squareroot [^]
+6. Squareroot [^8] [^9]
 
 ```python
 numbers = int(input("Please pick a number: "))
@@ -172,7 +172,7 @@ While function allows the input eventually be multiplied by .5 to be further cal
 
 7. Read E's
 
-Program to count the number of the letter "E" in a text file, including both upper and lower case
+Program to count the number of the letter "E" in a text file, including both upper and lower case [^10] [^11]
 
 >Creates a permanent file path
 
@@ -183,7 +183,7 @@ FILENAME = "/Users/rebeccaquinn/Desktop/pands-problem-sheet/countfile.txt"
 >Opens file and reads it with 'r'
 
 ```python
-file = open(FILENAME, 'r')
+file = open(FILENAME, 'r') 
 ```
 
 >Reads file, and counts number of letter in textfile above
@@ -280,13 +280,13 @@ plt.show()
 
 [^7]: https://www.niskayuna.org/sites/g/files/vyhlif4781/f/uploads/computercorner_do_you_know_what_time_it_is_and_does_your_pc_know_too.pdf
 
+[^]: https://www.geeksforgeeks.org/python-pow-function/
+
 [^]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
 
-[^]: https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
+[^10]: https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
 
-[^]: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
-
-[^]: https://www.geeksforgeeks.org/python-pow-function/
+[^11]: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 
 [^]: https://medium.com/@arseniytyurin/how-to-make-your-histogram-shine-69e432be39ca
 
