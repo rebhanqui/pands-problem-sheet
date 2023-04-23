@@ -23,10 +23,10 @@ plt.title("Plotting Plot")
 
 plt.hist(x, facecolor="cyan", edgecolor="white", label="X Data") # draws solid white grid lines
 plt.plot(xpoints, ypoints, linewidth=5.0, color="pink", label="Y Data") 
-plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=2.)
+plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=2)
 
-#shows the plots
-# saves the plot into an image file as seen in plotted.png 
+#printing th eplot images or saving the images to current dir
+#saves the plot into an image file as seen in plotted.png 
 #plt.savefig("plottask.png")
 
 #shows plot

@@ -120,7 +120,7 @@ print(number)
 
 5. Weekday
 
->Prints one of two results depend if it is a weekday or not.
+Program that prints one of two results depending if it is a weekday or not.
 
 ```python
 from datetime import datetime
@@ -217,52 +217,51 @@ print(f"There are {occurences} letter {letter}'s in the count file")
 
 8. Plottask
 
-Imports python packages to assist in plotting various charts and historgrams
+Program to plot line graph and historgram with legend
+
+>Imports python packages to assist in plotting various charts and historgrams
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-Distributuon is normal at 1000, mean is 5 and standard deviation is 2 for this historgram
+>Distributuon is set to normal at 1000, mean is 5 and standard deviation is 2 for this historgram
 
-```python
+```py
 meanvalue = 5
 standard = 2
 distrib = 1000
 x = np.random.normal(meanvalue, standard, distrib)
 ```
 
-Arranging the histogram [^]
+>Arranging axis x, y
 
 ```python
 xpoints = np.arange(0,11)
-
-#x (xpoints) to the power of 3 using pow 
+#x (xpoints) to the power of 3 using pow
 ypoints = pow(xpoints, 3,)
 ```
 
-Styling the plot and historgram details [^]
+>Plot stylizing [^12] [^13] [^14] [^15]
 
 ```python
 plt.figure(figsize=(14,7)) # size of fig 14x7
 plt.style.use('seaborn-whitegrid') #grid style
 plt.title("Plotting Plot")
-```
 
-Labels and further styling [^] [^]
-
-```python
-plt.hist(x, facecolor="cyan", edgecolor="white", label="X Data") # draw solid white grid lines
+plt.hist(x, facecolor="cyan", edgecolor="white", label="X Data") # draws solid white grid lines
 plt.plot(xpoints, ypoints, linewidth=5.0, color="pink", label="Y Data") 
-plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=2.)
+plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=2) 
 ```
 
-The commented out code saves the file and the end prints to screen without saving the result [^14]
+>Printing an image file of the plot or saving the images to current dir (commented out) [^16]
 
 ```python
+#saves the plot into an image file as seen in plotted.png 
 #plt.savefig("plottask.png")
 
+#gives preview of the result without saving
 plt.show()
 ```
 
@@ -292,10 +291,12 @@ plt.show()
 
 [^11]: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 
-[^]: https://medium.com/@arseniytyurin/how-to-make-your-histogram-shine-69e432be39ca
+[^12]: https://medium.com/@arseniytyurin/how-to-make-your-histogram-shine-69e432be39ca
 
-[^]: https://www.statology.org/matplotlib-line-thickness/
+[^13]: https://www.statology.org/matplotlib-line-thickness/
 
-[^]: https://jakevdp.github.io/PythonDataScienceHandbook/04.11-settings-and-stylesheets.html
+[^14]: https://jakevdp.github.io/PythonDataScienceHandbook/04.11-settings-and-stylesheets.html
 
-[^]: https://towardsdatascience.com/save-plots-matplotlib-1a16b3432d8a
+[^15]: https://stackoverflow.com/questions/49178622/adding-key-legend-to-histogram
+
+[^16]: https://towardsdatascience.com/save-plots-matplotlib-1a16b3432d8a
