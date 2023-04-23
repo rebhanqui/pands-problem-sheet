@@ -1,6 +1,6 @@
 #creates function to run collatz sequence
 #Author: Rebecca Quinn
-#[^1]
+
 def collatz(number):
 #takes positive int and divides by two until odd number
     if (number % 2 == 0):
@@ -21,6 +21,6 @@ while (number != 1):
     print(number)
 print(number)
     
- #[^1] https://youtu.be/lAp_5qTdOhM        
+      
         
 

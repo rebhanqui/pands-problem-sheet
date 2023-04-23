@@ -19,6 +19,3 @@ occurences = data.count(letter)
 #prints result
 print(f"There are {occurences} letter {letter}'s in the count file")
 
-#REF 1: https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
-#REF 2: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
-
