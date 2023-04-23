@@ -77,41 +77,44 @@ print(f"You have lodged €{eurosAmount}.{centsAmount}\nThank You!")
 
 4. Collatz
 
+Program to run the collatz sequence using user input
 
-`def collatz(number):`
->Creates function to run following collatz sequence [^5] 
-
-`if (number % 2 == 0):`
-    `return number // 2`
->Takes positive int and divides by two until odd number 
-
+>Input of positive int 
 
 ```python
-elif (number % 2 == 1):
-    return number * 3 + 1
-else :
-    print("ERROR")
-    return None
-```
-
->When encountering an odd number then program multiplies by 3 and adds 1 
-
-```python
-print("Enter a number. ")
+print("Please enter a number: ") 
 number = int(input())
-print(number)
+#end="" ensures numbers are laid out left to right rather than vertically
+print(number, end=" ")
+``` 
+
+[^4]
+
+>Function creation and using it on the user input
+
+```python
+def collatz(number):
+#takes positive int and divides by two until odd number
+    if (number % 2 == 0):
+        return number // 2
+#if odd number then multiple by 3 and add 1
+    elif (number % 2 == 1):
+        return number * 3 + 1
+    else :
+        print("ERROR")
+        return None
 ```
 
->User input of int 
+[^5]
+
+>While loop to end function when the user input gets to 1 and prints results including user input from above
 
 ```python
 while (number != 1):
-   number = collatz(number)
-   print(number)
+    number = collatz(number)
+    print(number, end=" ")
 print(number)
 ```
-
->Ends when result gets to 1
 
 ---
 
@@ -124,7 +127,7 @@ print("Yes, unfortunately today is a weekday")
 print("It is the weekend, yay!")
 ```
 
-By using import date the code can tell what the current day is without import. [^6]
+By using import date the code can tell what the current day is without import. [^]
 
 ```python
 import datetime
@@ -138,7 +141,7 @@ while datetime == range(0, 5):
 
 ---
 
-6. Squareroot [^7]
+6. Squareroot [^]
 
 ```python
 numbers = int(input("Please pick a number: "))
@@ -190,7 +193,7 @@ Requests user input to select a letter
 letter = input("Pick a letter to see how many occurences are in the count file: ")
 ```
 
-The `.count` counts how many times the chosen letter occurs and then prints the result [^8] [^9]
+The `.count` counts how many times the chosen letter occurs and then prints the result [^] [^]
 
 ```python
 occurences = data.count(letter)
@@ -218,7 +221,7 @@ distrib = 1000
 x = np.random.normal(meanvalue, standard, distrib)
 ```
 
-Arranging the histogram [^10]
+Arranging the histogram [^]
 
 ```python
 xpoints = np.arange(0,11)
@@ -227,7 +230,7 @@ xpoints = np.arange(0,11)
 ypoints = pow(xpoints, 3,)
 ```
 
-Styling the plot and historgram details [^11]
+Styling the plot and historgram details [^]
 
 ```python
 plt.figure(figsize=(14,7)) # size of fig 14x7
@@ -235,7 +238,7 @@ plt.style.use('seaborn-whitegrid') #grid style
 plt.title("Plotting Plot")
 ```
 
-Labels and further styling [^12] [^13]
+Labels and further styling [^] [^]
 
 ```python
 plt.hist(x, facecolor="cyan", edgecolor="white", label="X Data") # draw solid white grid lines
@@ -261,22 +264,26 @@ plt.show()
 
 [^3]: https://www.geeksforgeeks.org/python-operators/
 
-[^4]: https://youtu.be/lAp_5qTdOhM "Collatz Sequence Algorithm in Python @ 1:30"
+[^4]: https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
 
-[^5]: https://www.w3schools.com/python/python_datetime.asp "Date Time Import"
+[^5]: https://youtu.be/lAp_5qTdOhM "Collatz Sequence Algorithm in Python @ 1:30"
 
-[^6]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
+[^]: https://www.w3schools.com/python/python_datetime.asp "Date Time Import"
 
-[^7]: https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
+[^]: https://stackoverflow.com/questions/8437964/python-printing-horizontally-rather-than-current-default-printing
 
-[^8]: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+[^]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
 
-[^9]: https://www.geeksforgeeks.org/python-pow-function/
+[^]: https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
 
-[^10]: https://medium.com/@arseniytyurin/how-to-make-your-histogram-shine-69e432be39ca
+[^]: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 
-[^11]: https://www.statology.org/matplotlib-line-thickness/
+[^]: https://www.geeksforgeeks.org/python-pow-function/
 
-[^12]: https://jakevdp.github.io/PythonDataScienceHandbook/04.11-settings-and-stylesheets.html
+[^]: https://medium.com/@arseniytyurin/how-to-make-your-histogram-shine-69e432be39ca
 
-[^13]: https://towardsdatascience.com/save-plots-matplotlib-1a16b3432d8a
+[^]: https://www.statology.org/matplotlib-line-thickness/
+
+[^]: https://jakevdp.github.io/PythonDataScienceHandbook/04.11-settings-and-stylesheets.html
+
+[^]: https://towardsdatascience.com/save-plots-matplotlib-1a16b3432d8a

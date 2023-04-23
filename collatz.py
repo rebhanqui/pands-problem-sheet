@@ -1,5 +1,11 @@
-#creates function to run collatz sequence
+#creates function to run collatz sequence and prints results
 #Author: Rebecca Quinn
+
+#user input of positive int  
+print("Please enter a number: ") 
+number = int(input())
+#end="" ensures numbers are laid out left to right rather than vertically
+print(number, end=" ")
 
 def collatz(number):
 #takes positive int and divides by two until odd number
@@ -11,16 +17,9 @@ def collatz(number):
     else :
         print("ERROR")
         return None
-#user input of positive int   
-print("Enter a number. ")
-number = int(input())
-print(number)
+
 #end when result gets to 1
 while (number != 1):
     number = collatz(number)
-    print(number)
+    print(number, end=" ")
 print(number)
-    
-      
-        
-
