@@ -12,7 +12,7 @@ A collection of Weekly Tasks set in the PANDS Module
 
 ## List of Contents
 
-1. Hello World
+1. Hello World [^2]
 
 `print("helloworld")`
 
@@ -40,23 +40,35 @@ print(account_secure)
 
 3. Bank
 
->This program prompts user to input 2 amounts, adds both and prints output to user
+Prompts user to input 2 amounts in cents, adds both and prints output to user in Euros and Cents readable amount
+
+>Input 1 and 2 take in a number and change it to a int to then be added and assigned to the totalLodgement var
 
 ```python
 bankIn = int(input("Lodgement Amount 1: "))
 bankIn2= int(input("Lodgement Amount 2: "))
+
+totalLodgement = (bankIn + bankIn2)
 ```
 
->Input 1 and 2 take in a number and change it to a int to then be added [^2]
+>Converts input to euros first without reamining cents using int division
 
-`totalLodgement = (bankIn + bankIn2)`
->Add both int numbers
+```python
+eurosAmount = (totalLodgement//100)
+```
 
-`euroCents = (totalLodgement/100)`
->Converts input to euro and cents with the decimal point [^3]
+>The remainder operator yields the last two digits using % 100 and prints the cents after euros taken [^3]
 
-`print(f"You have lodged €{('%.2f' % euroCents)}\nThank You!")`
->Euro and cent amount output to user with trailing zero kept so cent amounts with '0' in them stay visible [^4]
+```python
+centsAmount = (totalLodgement % 100)
+```
+
+>Prints the total amount
+
+```python
+print(f"You have lodged €{eurosAmount}.{centsAmount}\nThank You!")
+```
+
 ---
 
 4. Collatz
@@ -243,26 +255,24 @@ plt.show()
 
 [^2]: https://vlegalwaymayo.atu.ie/pluginfile.php/857748/mod_label/intro/lab%202.2%20First%20Programs.pdf?time=1675120017388 "First Programs"
 
-[^3]: https://stackoverflow.com/questions/46189874/python-find-the-dollar-and-cent "How to get Dollar Cent - User: YOHAN DE ROSE"
+[^3]: https://www.geeksforgeeks.org/python-operators/
 
-[^4]: https://stackoverflow.com/questions/15238120/keep-trailing-zeroes-in-python "How to keep trailing Zeros - User: eyquem"
+[^4]: https://youtu.be/lAp_5qTdOhM "Collatz Sequence Algorithm in Python @ 1:30"
 
-[^5]: https://youtu.be/lAp_5qTdOhM "Collatz Sequence Algorithm in Python @ 1:30"
+[^5]: https://www.w3schools.com/python/python_datetime.asp "Date Time Import"
 
-[^6]: https://www.w3schools.com/python/python_datetime.asp "Date Time Import"
+[^6]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
 
-[^7]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
+[^7]: https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
 
-[^8]: https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
+[^8]: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 
-[^9]: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+[^9]: https://www.geeksforgeeks.org/python-pow-function/
 
-[^10]: https://www.geeksforgeeks.org/python-pow-function/
+[^10]: https://medium.com/@arseniytyurin/how-to-make-your-histogram-shine-69e432be39ca
 
-[^11]: https://medium.com/@arseniytyurin/how-to-make-your-histogram-shine-69e432be39ca
+[^11]: https://www.statology.org/matplotlib-line-thickness/
 
-[^12]: https://www.statology.org/matplotlib-line-thickness/
+[^12]: https://jakevdp.github.io/PythonDataScienceHandbook/04.11-settings-and-stylesheets.html
 
-[^13]: https://jakevdp.github.io/PythonDataScienceHandbook/04.11-settings-and-stylesheets.html
-
-[^14]: https://towardsdatascience.com/save-plots-matplotlib-1a16b3432d8a
+[^13]: https://towardsdatascience.com/save-plots-matplotlib-1a16b3432d8a
