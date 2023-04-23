@@ -123,21 +123,24 @@ print(number)
 >Prints one of two results depend if it is a weekday or not.
 
 ```python
-print("Yes, unfortunately today is a weekday")
-print("It is the weekend, yay!")
+from datetime import datetime
 ```
+>Allows you to use current date/day/time in following code
 
-By using import date the code can tell what the current day is without import. [^]
+>Takes the day number from weekday uses if else to determine if its a weekday (0-5) or weekend (5 and 6) [^6]
 
 ```python
-import datetime
+weeknum = datetime.today().weekday() 
+
+if weeknum < 5: 
+    #0-5=weekdays
+    print("Unfortunately, today is a weekday")
+else:
+    #5=Sat, 6=Sund
+    print("YAY! It's the weekend!")
 ```
 
-By giving the function perameters, if its not monday Friday (0-5) then it is the weekend
-
-```python
-while datetime == range(0, 5):
-```
+>Result depending on date as determined by device location and time [^7]
 
 ---
 
@@ -268,9 +271,9 @@ plt.show()
 
 [^5]: https://youtu.be/lAp_5qTdOhM "Collatz Sequence Algorithm in Python @ 1:30"
 
-[^]: https://www.w3schools.com/python/python_datetime.asp "Date Time Import"
+[^6]: https://www.w3schools.com/python/python_datetime.asp "Date Time Import"
 
-[^]: https://stackoverflow.com/questions/8437964/python-printing-horizontally-rather-than-current-default-printing
+[^7]: https://www.niskayuna.org/sites/g/files/vyhlif4781/f/uploads/computercorner_do_you_know_what_time_it_is_and_does_your_pc_know_too.pdf
 
 [^]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
 

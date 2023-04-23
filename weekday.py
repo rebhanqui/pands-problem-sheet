@@ -1,13 +1,16 @@
 #author: rebecca quinn
 #program that tells if weekday or weekend
 
-import datetime
+from datetime import datetime
 #allows you to use current date/day/time in following code
 
-while datetime == range(0, 5):
-    #asses if it is 0-5 (Mon - Fri with dateime) and prints accordingly
-    print("Yes, unfortunately today is a weekday")
-print("It is the weekend, yay!")
 
+#takes the day number from weekday
+weeknum = datetime.today().weekday()
 
-#test on weekday to see if works
+if weeknum < 5: 
+    #0-5=weekdays
+    print("Unfortunately, today is a weekday")
+else:
+    #5=Sat, 6=Sund
+    print("YAY! It's the weekend!")
