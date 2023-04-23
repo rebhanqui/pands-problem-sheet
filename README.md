@@ -8,12 +8,14 @@
 
 [^1]  
 
+---
+---
 
 A collection of Weekly Tasks set in the PANDS Module
 
 ## List of Contents
 
-### 1. Hello World 
+### 1. Hello World
 
 `print("helloworld")`
 
@@ -21,8 +23,8 @@ A collection of Weekly Tasks set in the PANDS Module
 
 >Prints the text *hellowworld* when called in terminal via - `python helloworld.py`
 
+---
 ---  
-
 
 ### 2. Accounts
 
@@ -42,8 +44,8 @@ account_secure = (f"Account number: {account_safe}")
 print(account_secure)
 ```
 
+---
 ---  
-
 
 ### 3. Bank
 
@@ -76,21 +78,21 @@ centsAmount = (totalLodgement % 100)
 print(f"You have lodged €{eurosAmount}.{centsAmount}\nThank You!")
 ```
 
+---
 ---  
-
 
 ### 4. Collatz
 
 Program to run the collatz sequence using user input
 
->Input of positive int 
+>Input of positive int
 
 ```python
 print("Please enter a number: ") 
 number = int(input())
 #end="" ensures numbers are laid out left to right rather than vertically
 print(number, end=" ")
-``` 
+```
 
 [^4]
 
@@ -120,8 +122,8 @@ while (number != 1):
 print(number)
 ```
 
+---
 ---  
-
 
 ### 5. Weekday
 
@@ -130,6 +132,7 @@ Program that prints one of two results depending if it is a weekday or not.
 ```python
 from datetime import datetime
 ```
+
 >Allows you to use current date/day/time in following code
 
 >Takes the day number from weekday uses if else to determine if its a weekday (0-5) or weekend (5 and 6) [^6]
@@ -148,7 +151,7 @@ else:
 >Result depending on date as determined by device location and time [^7]
 
 ---  
-
+---
 
 ### 6. Squareroot [^8] [^9]
 
@@ -179,7 +182,6 @@ print(f"The Square Root of {n} is approx. {newtonsqrt(n)}")
 ```
 
 ---  
-
 
 ### 7. Read E's
 
@@ -221,7 +223,6 @@ print(f"There are {occurences} letter {letter}'s in the count file")
 ```
 
 ---  
-
 
 ### 8. Plottask
 
