@@ -12,7 +12,7 @@ A collection of Weekly Tasks set in the PANDS Module
 
 ## List of Contents
 
-1. Hello World [^2]
+1. Hello World 
 
 `print("helloworld")`
 
@@ -24,18 +24,23 @@ A collection of Weekly Tasks set in the PANDS Module
 
 2. Accounts
 
->Program that reads in 10 digits and outputs same digits with only last 4 showing and first 6 replaced with X's
+Program reads in users account number and outputs same digits with only last 4 showing with the rest hidden by #
 
 
-`account_raw = input("Please enter your 10 digit account number: ")`
->Takes in the users account number
+> Takes in the users account number
 
 ```python
-account_secure = (f"Account number: XXXXXX{account_raw[-4:]}")
+account_raw = input("Please enter your account number: ")
+```
+
+>Hides all digits except the last four no matter the account number length and prints the result[^2]
+
+```python
+account_safe = "".join(['#' for x in account_raw[:-4]]) + account_raw[-4:]
+account_secure = (f"Account number: {account_safe}")
 print(account_secure)
 ```
 
->Confirms last 4 digits of account while hiding the first 6 digits via index and prints the result
 ---
 
 3. Bank
@@ -253,7 +258,7 @@ plt.show()
 
 [^1]: https://www.markdownguide.org/basic-syntax/ "Markdown Cheat Sheet"
 
-[^2]: https://vlegalwaymayo.atu.ie/pluginfile.php/857748/mod_label/intro/lab%202.2%20First%20Programs.pdf?time=1675120017388 "First Programs"
+[^2]: https://stackoverflow.com/questions/40842451/how-do-i-use-the-replace-function-to-change-all-but-the-last-4-characters-of
 
 [^3]: https://www.geeksforgeeks.org/python-operators/
 
