@@ -6,13 +6,14 @@
 | Author: | Rebecca Hannah Quinn |
 | Student Number: | G00425671 |
 
-[^1]
+[^1]  
+
 
 A collection of Weekly Tasks set in the PANDS Module
 
 ## List of Contents
 
-1. Hello World 
+### 1. Hello World 
 
 `print("helloworld")`
 
@@ -20,9 +21,10 @@ A collection of Weekly Tasks set in the PANDS Module
 
 >Prints the text *hellowworld* when called in terminal via - `python helloworld.py`
 
----
+---  
 
-2. Accounts
+
+### 2. Accounts
 
 Program reads in users account number and outputs same digits with only last 4 showing with the rest hidden by #
 
@@ -40,9 +42,10 @@ account_secure = (f"Account number: {account_safe}")
 print(account_secure)
 ```
 
----
+---  
 
-3. Bank
+
+### 3. Bank
 
 Prompts user to input 2 amounts in cents, adds both and prints output to user in Euros and Cents readable amount
 
@@ -73,9 +76,10 @@ centsAmount = (totalLodgement % 100)
 print(f"You have lodged €{eurosAmount}.{centsAmount}\nThank You!")
 ```
 
----
+---  
 
-4. Collatz
+
+### 4. Collatz
 
 Program to run the collatz sequence using user input
 
@@ -116,9 +120,10 @@ while (number != 1):
 print(number)
 ```
 
----
+---  
 
-5. Weekday
+
+### 5. Weekday
 
 Program that prints one of two results depending if it is a weekday or not.
 
@@ -142,9 +147,10 @@ else:
 
 >Result depending on date as determined by device location and time [^7]
 
----
+---  
 
-6. Squareroot [^8] [^9]
+
+### 6. Squareroot [^8] [^9]
 
 Program to define the root of user given number
 
@@ -172,9 +178,10 @@ def newtonsqrt(n):
 print(f"The Square Root of {n} is approx. {newtonsqrt(n)}")
 ```
 
----
+---  
 
-7. Read E's
+
+### 7. Read E's
 
 Program to count the number of the letter "E" in a text file, including both upper and lower case [^10] [^11]
 
@@ -213,9 +220,10 @@ occurences = int(loweroccurences + upperoccurences)
 print(f"There are {occurences} letter {letter}'s in the count file")
 ```
 
----
+---  
 
-8. Plottask
+
+### 8. Plottask
 
 Program to plot line graph and historgram with legend
 
