@@ -10,12 +10,19 @@ file = open(FILENAME, 'r')
 #puts file content to string
 data = file.read()
 
-#requests user to select a letter
-letter = input("Pick a letter to see how many occurences are in the count file: ")
+#letter to count
+letter = ("e")
 
-#count counts how many times the chosen letter occurs
-occurences = data.count(letter)
+#letter in bother cases
+letterlower = ("e")
+letterupper = ("E")
+
+#count counts how many times the chosen letter occurs in both upper and lowercase
+loweroccurences = data.count(letterlower)
+upperoccurences = data.count(letterupper)
+
+#combination of occurances of letter cases
+occurences = int(loweroccurences + upperoccurences)
 
 #prints result
 print(f"There are {occurences} letter {letter}'s in the count file")
-

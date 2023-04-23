@@ -172,35 +172,40 @@ While function allows the input eventually be multiplied by .5 to be further cal
 
 7. Read E's
 
-Creates a permanent file path
+Program to count the number of the letter "E" in a text file, including both upper and lower case
+
+>Creates a permanent file path
 
 ```python
 FILENAME = "/Users/rebeccaquinn/Desktop/pands-problem-sheet/countfile.txt"
 ```
 
-Opens file and reads it with 'r'
+>Opens file and reads it with 'r'
 
 ```python
 file = open(FILENAME, 'r')
 ```
 
-Puts file content to string
+>Reads file, and counts number of letter in textfile above
 
 ```python
 data = file.read()
-```
 
-Requests user input to select a letter
+#letter to count
+letter = ("e")
 
-```python
-letter = input("Pick a letter to see how many occurences are in the count file: ")
-```
+#letter in bother cases
+letterlower = ("e")
+letterupper = ("E")
 
-The `.count` counts how many times the chosen letter occurs and then prints the result [^] [^]
+#count counts how many times the chosen letter occurs in both upper and lowercase
+loweroccurences = data.count(letterlower)
+upperoccurences = data.count(letterupper)
 
-```python
-occurences = data.count(letter)
+#combination of occurances of letter cases
+occurences = int(loweroccurences + upperoccurences)
 
+#prints result
 print(f"There are {occurences} letter {letter}'s in the count file")
 ```
 
