@@ -26,7 +26,6 @@ A collection of Weekly Tasks set in the PANDS Module
 
 Program reads in users account number and outputs same digits with only last 4 showing with the rest hidden by #
 
-
 > Takes in the users account number
 
 ```python
