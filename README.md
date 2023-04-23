@@ -280,9 +280,9 @@ plt.show()
 
 [^7]: https://www.niskayuna.org/sites/g/files/vyhlif4781/f/uploads/computercorner_do_you_know_what_time_it_is_and_does_your_pc_know_too.pdf
 
-[^]: https://www.geeksforgeeks.org/python-pow-function/
+[^8]: https://www.geeksforgeeks.org/python-pow-function/
 
-[^]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
+[^9]: http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton%27sMethod.html
 
 [^10]: https://pythonexamples.org/python-count-occurrences-of-word-in-text-file/
 
